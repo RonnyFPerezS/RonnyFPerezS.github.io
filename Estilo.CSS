@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f2f2f2;
   }
 
 
@@ -26,6 +26,7 @@ body {
   }
 
 .topnav {
+    font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
     background-color: #1f2a8e;
   }
@@ -38,17 +39,24 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    transition: 0.6s ease;
   }
   
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: #f2f2f2;
     color: black;
+  }
+ 
+  .IconN{
+    font-size:30px;
   }
   
   .topnav a.active {
-    background-color: #e3eae8;
+    background-color: #ffffff;
     color: rgb(7, 7, 7);
   }
+
+  
   
   
   
