@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Politecnico Juan de la cruz Abad</title>
-  <link rel="stylesheet" href="Estilo.CSS">
-  <script src="Script.js"></script>
-  <link rel="icon" type="image/jpg" href="apartados/multimedia/LOGO.jpg">
+  <link rel="stylesheet" href="css/Estilo.CSS">
+  <script src="js/Script.js"></script>
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="icon" type="image/jpg" href="img/LOGO.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
@@ -19,25 +21,81 @@
     <ul class="navbar">
       <li><a href="index.html" class="active"><i class="fas fa-home IconN"></i> Inicio</a></li>
       <li><a href="#news"><i class="fas fa-users IconN"></i> Quiens Somos</a></li>
-      <li class="dropdown2"><a href="#contact"><i class="fas fa-envelope IconN"></i> Contacto</a>
-        <ul class="dropdown-content2">
-          <li><a href="#">FaceBook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Whatsap</a></li>
+      <li id="dropdown"><a href="#contact"><i class="fas fa-envelope IconN"></i> Contacto</a>
+        <ul id="dropdown-content">
+          <li><a href="#"><i class="fas fa-pen-square IconN"></i>FaceBook</a></li>
+          <li><a href="#"><i class="fas fa-pen-square IconN"></i>Instagram</a></li>
+          <li><a href="#"><i class="fas fa-pen-square IconN"></i>Whatsap</a></li>
         </ul>
       </li>
-      <li class="dropdown"><a href="#about"><i class="fas fa-graduation-cap IconN"></i> Oferta Académica</a>
-        <ul class="dropdown-content">
-          <li><a href="#">Servicio 1</a></li>
-          <li><a href="#">Servicio 2</a></li>
-          <li><a href="#">Servicio 3</a></li>
+      <li id="dropdown"><a href="#about"><i class="fas fa-graduation-cap IconN"></i> Oferta Académica</a>
+        <ul id="dropdown-content">
+          <li><a href="#"><i class="fas fa-pen-square IconN"></i>Servicio 1</a></li>
+          <li><a href="#"><i class="fas fa-pen-square IconN"></i>Servicio 2</a></li>
+          <li><a href="#"><i class="fas fa-pen-square IconN"></i>Servicio 3</a></li>
         </ul>
       </li>
       <li><a href="#about"><i class="fas fa-pen-square IconN"></i> Inscripción</a></li>
       <li><a href="#about"><i class="far fa-newspaper IconN"></i> Periódico Escolar</a></li>
       <li><a href="#about"><i class="fas fa-user-tie IconN"></i> Dirección</a></li>
+      <li><a href="#about"><i class="fas fa-user-tie IconN"></i> Equipos Deportivos</a></li>
     </ul>
   </div>
+
+  <div class="slideshow">
+    <ul class="slider">
+      <li>
+        <img src="img/1.jpg" alt="">
+        <section class="caption">
+          <h1>Lorem ipsum 1</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem quisquam
+            unde.</p>
+        </section>
+      </li>
+      <li>
+        <img src="img/2.jpg" alt="">
+        <section class="caption">
+          <h1>Lorem ipsum 2</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem quisquam
+            unde.</p>
+        </section>
+      </li>
+      <li>
+        <img src="img/3.jpg" alt="">
+        <section class="caption">
+          <h1>Lorem ipsum 3</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem quisquam
+            unde.</p>
+        </section>
+      </li>
+      <li>
+        <img src="img/4.jpg" alt="">
+        <section class="caption">
+          <h1>Lorem ipsum 4</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem quisquam
+            unde.</p>
+        </section>
+      </li>
+      <li>
+        <img src="img/ReferenciaSize.jpg" alt="">
+        <section class="caption">
+          <h1>Lorem ipsum 4</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem quisquam
+            unde.</p>
+        </section>
+      </li>
+    </ul>
+
+    <div class="left">
+      <span class="fa fa-chevron-left"></span>
+    </div>
+
+    <div class="right">
+      <span class="fa fa-chevron-right"></span>
+    </div>
+
+  </div>
+
 
 </body>
 
