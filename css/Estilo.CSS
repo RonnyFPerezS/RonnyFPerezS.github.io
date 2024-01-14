@@ -1,5 +1,5 @@
 body {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color:rgb(226, 221, 221);
@@ -7,16 +7,19 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-
+ 
   .filtro{
     width: 100%;
-    height: 533px;
     background: linear-gradient(to right, hsla(0, 95%, 50%, 0.459), hsla(250, 100%, 50%, 0.664)), url(../img/0.jpg);
     background-attachment:fixed;
     z-index: 1;
     position: absolute;
     opacity: 0.5;
   }
+  .slideshow .filtro {
+    height: 100%;
+  }
+
 .topnav{
   width:100%;
 }
@@ -123,7 +126,7 @@ body {
 }
 
 .slider .caption{
-	position: absolute;
+	position:absolute;
 	width: 100%;
 	height: 100%;
   top:0;
@@ -134,10 +137,12 @@ body {
 	align-items: center;
 	text-align: center;
 	color: #fff;
+  z-index:1;
 }
 
 .slider .caption h1{
-	font-size: 50px;
+  margin-bottom: 300px;
+	font-size: 70px;
 }
 
 .slider .caption p{

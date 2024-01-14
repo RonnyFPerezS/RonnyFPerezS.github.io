@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT";
+  background-color: #f2f2f2;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 80vh;
+  background: #bc4e9c;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+      to right,
+      hsla(340, 95%, 50%, 0.459),
+      hsla(317, 45%, 52%, 0.664)
+    ),
+    url(../css/10.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+      to right,
+      hsla(340, 95%, 50%, 0.459),
+      hsla(317, 45%, 52%, 0.664)
+    ),
+    url(../css/10.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header .textos-header {
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.textos-header h1 {
+  font-size: 50px;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.textos-header h2 {
+  font-size: 70px;
+  font-weight: 900;
+  margin-top: 25px;
+  color: #fff;
+}
+
+.wave {
+  position: static;
+  bottom: 0;
+  margin-top: 70px;
+  width: 100%;
+}
+
+/*fin header*/
+
+/*narva*/
+.main .navegacion {
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+  background: rgb(23, 19, 87);
+  box-sizing: 100%;
+  position: static;
+  margin-bottom: 50px;
+}
+.navegacion .menu .img_logo {
+  margin-right: 600px;
+  margin-top: -20px;
+}
+.img_logo img {
+  border-radius: 50%; 
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  align-items: center;
+}
+.div > ul > li {
+  margin: 0 20px;
+}
+.div > ul {
+  display: flex;
+  margin: 25px;
+  position: static;
+  float: right;
+  list-style: none;
+}
+.div > ul > li > a {
+  color: #f7f9f9;
+  text-decoration: none;
+  padding: 12px;
+  font-size: 20px;
+  position: static;
+}
+
+.uno1 a:hover {
+  border-bottom: 3px solid aqua;
+  padding: 0 20px;
+  transition: 0.7s;
+}
+.uno2 a:hover {
+  border-bottom: 3px solid black;
+  padding: 0 20px;
+  transition: 0.7s;
+}
+.uno3 a:hover {
+  border-bottom: 3px solid #08f;
+  padding: 0 20px;
+  transition: 0.7s;
+}
+.uno4 a:hover {
+  border-bottom: 3px solid purple;
+  padding: 0 20px;
+  transition: 0.7s;
+}
+/*fin de menu*/
+
+/*sub menu*/
+
+.menu .submenu {
+  width: 200px;
+  position: absolute;
+  list-style: none;
+  background: rgb(23, 19, 87);
+  padding: 15px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.menu .submenu > li > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #f7f9f9;
+}
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+.submenu > li {
+  text-align: center;
+  font-size: 57px;
+}
+.submenu li:hover {
+  transition: 1s;
+}
+
+/* fin de submenu*/
+
+.sec1 .rese {
+  background-color: #fff;
+  width: 66%;
+  height: 45vb;
+  margin: 90px auto;
+  padding: 25px;
+  box-shadow: 5px 5px 6px 5px hsla(0, 0%, 7%, 0.336);
+}
+
+.contenedor {
+  padding: 40px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titulo {
+  color: rgb(23, 19, 87);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/*portafolio*/
+
+/* Galeria */
+
+.portafolio {
+  background: #f2f2f2;
+}
+
+/*.galeria-port {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 75vb;
+}*/
+.galeria-port {
+  display: flex;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.galeria-port .imagen-port {
+  width: 24%;
+  border-radius: 15px;
+  margin: 15px 15px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imagen-port > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hover-galeria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: hsla(273, 91%, 27%, 0.7);
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hover-galeria img {
+  width: 50px;
+}
+
+.hover-galeria p {
+  color: #fff;
+}
+
+.imagen-port:hover .hover-galeria {
+  transform: scale(1);
+  transition-duration: 1s;
+}
+
+/*finde portafolio*/
+
+/* Clients */
+
+.cards {
+  display: flex;
+width: 100%;
+}
+
+.cards .card {
+  background: rgb(23, 19, 87);
+  display: flex;
+  width: 46%;
+  padding: 25px;
+  margin-right: 65px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: block;
+}
+
+.cards .card > .contenido-texto-card {
+  width: 60%;
+  color: #fff;
+}
+
+.cards .card > .contenido-texto-card p {
+  font-weight: 300;
+  padding-top: 5px;
+}
+
+/*ghhhhh*/
+.cont-juga {
+  display: flex;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.cont-juga .perfi-juga {
+  background: rgb(23, 19, 87);
+  margin: 15px;
+  width: 30%;
+  height: 20 ººº0px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cont-juga .perfi-juga img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: block;
+  margin: 5px auto;
+}
+
+.cont-juga .perfi-juga > .perfi-texto {
+  width: 60%;
+  color: #fff;
+  margin: 5px auto;
+}
+
+.cont-juga .perfi-juga > .perfi-texto p {
+  font-weight: 300;
+  padding-top: 5px;
+}
+
+
+/*footer*/
+.pie{
+  background: #140b5c;
+}
+img{
+  width: 40px;
+  border-radius: 50%;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+span{
+  font-size: 23px;
+}
+.fb{
+  background: rgb(0, 81, 255);
+  padding: 8px;
+  border-radius: 50px;
+  color: white;
+}
+.tw{
+  background: rgb(0, 140, 255);
+  padding: 8px;
+  border-radius: 50px;
+  color: white;
+}
+.in{
+  background: rgb(255, 0, 179);
+  padding: 8px;
+  border-radius: 50px;
+  color: white;
+}
+.li{
+  background: rgb(0, 102, 255);
+  padding: 8px;
+  border-radius: 50px;
+  color: white;
+}
+.yt{
+  background: rgb(255, 0, 0);
+  padding: 8px;
+  border-radius: 50px;
+  color: white;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.logotipo{
+  font-size: 18px;
+  color: white;
+}
+.section{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+.section div{
+  display: flex;
+  flex-direction: column;
+}
+div h2{
+  color: white;
+  padding: 10px 0;
+}
+a{
+  color: rgba(255, 255, 255, 0.527);
+  text-decoration: none;
+  padding: 5px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input{
+  background: none;
+  border: solid 2px white;
+  padding: 10px 20px;
+}
+button{
+  padding: 10px 20px;
+  background: white;
+  color: blueviolet;
+  font-size: 18px;
+}
+.derechos{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #0a0433;
+  color: white;
+}
